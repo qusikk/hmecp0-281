@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <include id="header" src="../../components/header/header-component.html"></include>
+
+
+
+
+  <div class='content h-screen flex p-4 items-center justify-center'>
+    <div class="w-full h-full flex">
+
+
+      <div class="h-full w-[50%] p-4">
+        <p class="text-xl mb-2">First name</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">Last name</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">State</p>
+        <select class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+          <option>Azerbaijan</option>
+        </select>
+        <p class="text-xl mb-2">City</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">Adress</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">Zip</p>
+        <input class="bg-white border w-[200px] rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">Phone</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <p class="text-xl mb-2">Email</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+        <div class="flex items-center space-x-1 py-2">
+          <input type="checkbox" class="w-5 h-5" id="" name="">
+          <span>Agree to terms and conditions</span>
+        </div>
+      </div>
+
+
+      <div class="h-full w-[50%] p-4">
+        <img class="w-full" src="../../Public/Images/payment.png">
+        <p class="text-xl mb-2">Card number</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+
+        <div class="flex space-x-1">
+
+          <div>
+            <p class="text-xl mb-2">Expiration(MM)</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+          </div>
+          <div>
+            <p class="text-xl mb-2">Expiration(YY)</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+          </div>
+          <div>
+            <p class="text-xl mb-2">Card security code</p>
+        <input class="bg-white border w-full rounded-lg px-3 py-2" type="text">
+          </div>
+          
+        </div>
+         <p class="flex justify-between py-4 text-xl">
+            <span>Subtotal</span>
+            <span>186.99$</span>
+          </p>
+          <hr>
+           <p class="flex justify-between py-4 text-xl">
+            <span>Shipping</span>
+            <span>FREE</span>
+          </p>
+          <hr>
+           <p class="flex justify-between py-4 text-xl">
+            <span>Total</span>
+            <span>186.99$</span>
+          </p>
+          <hr>
+          <button class="bg-red-500 hover:bg-red-600 font-medium text-white rounded-lg px-3 py-2 mt-2 w-[200px] text-lg cursor-pointer">Place order</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <include id="footer" src="../../components/footer/footer-component.html"></include>
+
+  <script type="module" src="../../utils/include.js">
+  </script>
+
+
+</body>
+
+</html>

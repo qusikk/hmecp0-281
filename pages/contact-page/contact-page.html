@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white">
+    <include id="header" src="../../components/header/header-component.html"></include>
+    <div class='content h-screen p-4 flex items-center justify-center'>
+        <div class='w-full h-full p-4'>
+            <div class="flex space-x-2">
+                 <h2 class="text-gray-400 cursor-pointer">Home</h2>
+                 <h2>/</h2>
+            <h2 class="font-medium cursor-pointer">Contact</h2>
+            </div>
+            
+
+            <div class='w-full h-[700px] flex'>
+
+                <div class='w-[30%] flex p-4 flex-col justify-center h-full'>
+                    <div class='flex items-center space-x-4'>
+                        <img src="../../public/svg/icons-phone.svg" alt="">
+                        <span class='text-xl font-bold'>Call To Us</span>
+                    </div>
+
+                    <p class='text-xl mt-4'>We are available 24/7, 7 days a week.</p>
+                    <p class='text-xl'>Phone: +8801611112222</p>
+
+                    <hr class='block my-4'>
+
+                    <div class='flex items-center space-x-4'>
+                        <img src="../../public/svg/icons-mail.svg" alt="">
+                        <span class='text-xl font-bold'>Write To Us</span>
+                    </div>
+
+                    <p class='text-xl mt-4'>Fill out our form and we will contact you within 24 hours.</p>
+                    <p class='text-xl'>Emails: customer@exclusive.com</p>
+                    <p>Emails: support@exclusive.com</p>
+                </div>
+
+                <div class="w-[70%] flex items-center justify-around h-full">
+                    <div class="shadow p-4 w-[80%] h-[80%]">
+                        <ul class='flex justify-between space-y-2'>
+                            <li>
+                              
+                                <input placeholder="Your name" class="px-3 py-2 bg-gray-100" type="text" />
+                            </li>
+                            <li>
+                              
+                                <input placeholder="Your email" class="px-3 py-2 bg-gray-100" type="text" />
+                            </li>
+                            <li>
+                                
+                                <input placeholder="Your phone" class="px-3 py-2 bg-gray-100" type="text" />
+                            </li>
+                        </ul>
+
+                        
+                        <textarea class="bg-gray-100 h-[200px] text-gray-400 w-full flex items-start justify-start" cols="5" name="" id="">   Your message</textarea>
+
+                        <button
+                            class="px-3 py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg font- text-l cursor-pointer mt-5">Send
+                            message</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    <script type="module" src="../../utils/include.js"></script>
+
+</body>
+
+</html>
