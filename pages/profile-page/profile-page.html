@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex flex-col content h-screen">
+    <include id="header" src="../../components/header/header-component.html"></include>
+
+    <div class="flex-grow flex ml-20 p-8 justify-start items-start">
+        <div class="space-y-4">
+            <button class="bg-red-500 text-white text-s px-3 py-1 cursor-pointer hover:bg-red-600 rounded">User Products</button>
+
+            <div class="text-lg space-y-1">
+                <p>name: tural1992</p>
+                <p>surname: tural1992</p>
+                <p>username: tural1992@gmail.com</p>
+                <p>email: tural1992@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    <script type="module" src="../../utils/include.js"></script>
+</body>
+
+</html>
